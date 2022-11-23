@@ -111,7 +111,11 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
+header {
+  position: absolute;
+  top: 15px;
+  left: 5%;
+}
 
 
 
@@ -124,7 +128,44 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+/*banner section start*/
+.banner-section .wrapper { width: 100%; }
 
+.slider-images li { position: relative; }
+
+.slider-content { 
+  width: 25%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.play { 
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00A36C;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 37px;
+  bottom: 16px;
+  background-color: #00A36C;
+  text-indent: -9999px;
+}
+
+.play::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  content: '\f0e2';
+  font-family: "FontAwesome";
+  font-size: 13px;
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+}
+/*banner section end*/
 
 
 
