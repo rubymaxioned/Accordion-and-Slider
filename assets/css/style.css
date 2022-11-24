@@ -349,6 +349,7 @@ h3 {
   display: none;
 }
 
+.accordion-head span.active::after { display: none; }
 .show { display: block; }
 .hide { display: none; }
 /*accordion section end*/
