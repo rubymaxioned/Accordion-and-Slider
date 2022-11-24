@@ -194,6 +194,49 @@ header {
   font-size: 10px;
   text-transform: capitalize;
 }
+
+.slider-images { position: relative; }
+
+.arrow {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.left-arrow { 
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 5%;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 5%;
+}
+
+.left-arrow::before { 
+  color: #fff;
+  content: '\f053';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-arrow::before {
+  color: #fff;
+  content: '\f054';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-section { position: relative; }
+
+.slider-images li:nth-of-type(2),
+.slider-images li:nth-of-type(3) { 
+  display: none;
+}
 /*banner section end*/
 
 
@@ -374,6 +417,11 @@ h3 {
 .card-section p { text-align: center; }
 h3 { font-size: 18px; }
 .accordion p { font-size: 12px; }
+
+.left-arrow::before,
+.right-arrow::before { 
+  font-size: 30px; 
+}
 }
 
 /*media query for 1024px starts here*/
