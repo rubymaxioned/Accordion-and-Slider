@@ -201,6 +201,7 @@ header {
   width: 100%;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .left-arrow { 
@@ -231,7 +232,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.banner-section { position: relative; }
+.banner-section .wrapper { position: relative; }
 
 .slider-images li:nth-of-type(2),
 .slider-images li:nth-of-type(3) { 
