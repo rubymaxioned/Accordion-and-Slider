@@ -245,11 +245,7 @@ header {
 
 /*card section start*/
 .card-section { padding: 25px 0; }
-
-.icon1::before,
-.icon2::before,
-.icon3::before,
-.icon4::before { content: '\f04b'; }
+.card-icon::before { content: '\f04b'; }
 
 .card-section ul {
   display: flex;
