@@ -223,24 +223,17 @@ header {
 
 .right-arrow { right: 5%; }
 
-.left-arrow::before { 
-  color: #fff;
-  content: '\f053';
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+.left-arrow::before,
 .right-arrow::before {
   color: #fff;
-  content: '\f054';
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.left-arrow::before { content: '\f053'; }
+.right-arrow::before { content: '\f054'; }
 .slider-images img { max-height: 277px; }
-
 .banner-section .wrapper { position: relative; }
 .slider-images > li { display: none; }
 .slider-images > li.show { display: block; }
