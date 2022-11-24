@@ -239,7 +239,6 @@ header {
 .slider-images > li.show { display: block; }
 /*banner section end*/
 
-
 /*card section start*/
 .card-section { padding: 25px 0; }
 .card-icon::before { content: '\f04b'; }
@@ -248,16 +247,13 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
 }
 
+.card-section ul { gap: 20px; }
+
 .card-section ul li { 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   gap: 10px;
-  justify-content: center;
   text-align: center;
 }
 
@@ -276,7 +272,6 @@ h2 {
 
 .card-section p span { color: #F5460C; }
 /*card section end*/
-
 
 /*accordion section start*/
 .accordion-head { 
