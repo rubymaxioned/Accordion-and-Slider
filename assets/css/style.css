@@ -132,8 +132,6 @@ header {
 }
 
 .slider-content span:nth-of-type(2)::first-letter { text-transform: capitalize; }
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -141,9 +139,9 @@ header {
 /*=================================
   main styling starts here
 =================================*/
+
 /*banner section start*/
 .banner-section .wrapper { width: 100%; }
-
 .slider-images li { position: relative; }
 
 .slider-content { 
@@ -168,7 +166,9 @@ header {
   text-indent: 0;
 }
 
-.play, .see { 
+.play,
+.see,
+.lorem { 
   width: 20px;
   height: 20px;
   margin: 0 auto 20px;
@@ -177,14 +177,20 @@ header {
   display: block;
 }
 
-.play::before, .see::before {
+.play::before,
+.see::before,
+.lorem::before {
   top: 50%;
   left: 50%;
   color: #fff;
-  content: '\f04b';
   font-size: 13px;
   transform: translate(-50%, -50%);
 }
+
+.play::before { content: '\f04b'; }
+.see::before { content: '\f02d'; }
+.lorem::before { content: '\f2b9'; }
+
 
 .download a {
   padding: 5px;
@@ -197,9 +203,12 @@ header {
 
 .slider-images { position: relative; }
 
+.arrow,
+.left-arrow,
+.right-arrow { position: absolute; }
+
 .arrow {
   width: 100%;
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -207,14 +216,10 @@ header {
 .left-arrow { 
   width: 20px;
   height: 20px;
-  position: absolute;
   left: 5%;
 }
 
-.right-arrow {
-  position: absolute;
-  right: 5%;
-}
+.right-arrow { right: 5%; }
 
 .left-arrow::before { 
   color: #fff;
@@ -233,14 +238,6 @@ header {
 }
 
 .banner-section .wrapper { position: relative; }
-
-/* .slider-images li:nth-of-type(2),
-.slider-images li:nth-of-type(3) { 
-  display: none;
-} */
-
-/* .image-content { display: none; } */
-
 .slider-images > li { display: none; }
 .slider-images > li.show { display: block; }
 /*banner section end*/
@@ -248,20 +245,14 @@ header {
 
 /*card section start*/
 .card-section { padding: 25px 0; }
-
-.icon1::before,
-.icon2::before,
-.icon3::before,
-.icon4::before { 
-  content: '\f04b';
-}
+.card-icon::before { content: '\f04b'; }
 
 .card-section ul {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 
 .card-section ul li { 
@@ -351,11 +342,6 @@ h3 {
   height: 15px;
 }
 
-/* .accordion li:nth-of-type(2) p,
-.accordion li:nth-of-type(3) p{
-  display: none;
-} */
-
 .accordion-head span.active::after { display: none; }
 .show { display: block; }
 .hide { display: none; }
@@ -382,7 +368,9 @@ h3 {
 /*media query starts*/
 /*media query for 480px starts here*/
 @media only screen and (min-width: 480px) {
-.play, .see {
+.play,
+.see,
+.lorem {
   width: 30px;
   height: 30px;
 }
@@ -393,8 +381,9 @@ h3 {
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
-
-.play, .see {
+.play,
+.see,
+.lorem {
   width: 40px;
   height: 40px;
 }
@@ -403,12 +392,13 @@ h3 {
   margin-bottom: 15px;
   font-size: 20px;
 }
-
 }  
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
-.play, .see {
+.play,
+.see,
+.lorem {
   width: 60px;
   height: 60px;
   margin: 0 auto 30px;
@@ -420,7 +410,10 @@ h3 {
 }
 
 .download a { padding: 10px 5%; }
-.play::before, .see::before { font-size: 25px; }
+
+.play::before,
+.see::before,
+.lorem::before { font-size: 25px; }
 
 .card-section ul {
   flex-wrap: wrap;
@@ -434,21 +427,17 @@ h3 {
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
-
 .card-section ul li { flex-basis: 22%; }
 .card-section p { text-align: center; }
 h3 { font-size: 18px; }
 .accordion p { font-size: 12px; }
 
 .left-arrow::before,
-.right-arrow::before { 
-  font-size: 30px; 
-}
+.right-arrow::before { font-size: 30px; }
 }
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
-
 .slider-images figure img {
   max-height: 710px;
   object-fit: cover;
