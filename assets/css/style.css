@@ -141,7 +141,9 @@ header {
 =================================*/
 
 /*banner section start*/
-.banner-section .wrapper { width: 100%; }
+.banner-section .wrapper,
+.slider-images li { width: 100%; }
+
 .slider-images li { position: relative; }
 
 .slider-content { 
@@ -236,6 +238,8 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.slider-images img { max-height: 277px; }
 
 .banner-section .wrapper { position: relative; }
 .slider-images > li { display: none; }
@@ -392,6 +396,9 @@ h3 {
   margin-bottom: 15px;
   font-size: 20px;
 }
+
+.slider-images img { max-height: 392px; }
+.slider-images img { max-height: 561px; }
 }  
 
 /*media query for 768px starts here*/
