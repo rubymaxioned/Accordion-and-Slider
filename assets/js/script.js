@@ -4,14 +4,20 @@ var images = document.querySelectorAll('.slider-images li');
 var prev = document.querySelector('.left-arrow');
 var next = document.querySelector('.right-arrow');
 
+
+//accordion 
 accordion.forEach(function(list,index){
+
     list.addEventListener('click',function(){
         list.classList.toggle('active');
         para[index].classList.toggle('show');
         console.log(para[index]);
     })
+    
 })
 
+
+//slider
 var initial = 0;
 
 function sliderFunction(num) {
@@ -29,7 +35,7 @@ prev.addEventListener("click", function(){
     if(initial < 0) {
         initial = images.length - 1
     }
-    sliderFunction(initial)
+    sliderFunction(initial);
 })
 
 next.addEventListener("click", function(){
@@ -37,6 +43,5 @@ next.addEventListener("click", function(){
     if(initial > images.length - 1) {
         initial = 0;
     }
-    sliderFunction(initial)
-    // console.log(initial);
+    sliderFunction(initial);
 })
