@@ -102,6 +102,12 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
