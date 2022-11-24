@@ -233,9 +233,58 @@ h2 {
 /*card section end*/
 
 
+/*accordion section start*/
+.accordion-head { 
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #EBEBEB;
+  justify-content: space-between;
+}
 
+h3::first-letter { text-transform: capitalize; }
 
+.accordion p {
+  padding: 10px;
+  color: #666;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: justify;
+}
 
+h3 { font-size: 15px; }
+.accordion li { margin-bottom: 15px; }
+
+.line::before {
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  content: '';
+}
+
+.line::after {
+  width: 2px;
+  height: 15px;
+  background-color: #000;
+  content: '';
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 0;
+  text-indent: 0;
+}
+
+.line::before,
+.line::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  width: 25px;
+  height: 15px;
+}
+/*accordion section end*/
 
 /*=================================
   main styling ends here
