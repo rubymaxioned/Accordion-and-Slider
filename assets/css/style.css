@@ -166,7 +166,7 @@ header {
   width: 20px;
   height: 20px;
   margin: 0 auto 20px;
-  border: 1px solid #00A36C;
+  border: 1px solid #fff;
   border-radius: 50%;
   display: block;
 }
@@ -252,7 +252,11 @@ h3::first-letter { text-transform: capitalize; }
   text-align: justify;
 }
 
-h3 { font-size: 15px; }
+h3 { 
+  flex-basis: 90%;
+  font-size: 15px;
+}
+
 .accordion li { margin-bottom: 15px; }
 
 .line::before {
@@ -305,9 +309,79 @@ h3 { font-size: 15px; }
 =================================*/ 
 
 /*media query starts*/
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+.play, .see {
+  width: 30px;
+  height: 30px;
+}
+
+.slider-content span:nth-of-type(2) { font-size: 16px; }
+.download a { font-size: 12px; }
+}  
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+
+.play, .see {
+  width: 40px;
+  height: 40px;
+}
+
+.slider-content span:nth-of-type(2) {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+}  
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+.play, .see {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 30px;
+}
+
+.slider-content span:nth-of-type(2) {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.download a { padding: 10px 5%; }
+.play::before, .see::before { font-size: 25px; }
+
+.card-section ul {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-section ul li { flex-basis: 47%; }
+.card-section { padding: 40px 0; }
+}  
+
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 995px) {
 
+.card-section ul li { flex-basis: 22%; }
+.card-section p { text-align: center; }
+h3 { font-size: 18px; }
+.accordion p { font-size: 12px; }
+}
 
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
 
+.slider-images figure img {
+  max-height: 710px;
+  object-fit: cover;
+}
+
+.slider-images li { width: 100%; }
+.accordion-head { padding: 20px 2%; }
+.accordion p { padding: 10px 2% }
+
+.card-section .wrapper,
+.accordion-section .wrapper { width: 80%; }
 }  
