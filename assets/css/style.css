@@ -309,6 +309,8 @@ h3 {
   font-size: 15px;
 }
 
+.para { display: none; }
+
 .accordion li { 
   width: 100%;
   margin-bottom: 15px;
@@ -344,10 +346,10 @@ h3 {
   height: 15px;
 }
 
-.accordion li:nth-of-type(2) p,
+/* .accordion li:nth-of-type(2) p,
 .accordion li:nth-of-type(3) p{
   display: none;
-}
+} */
 
 .accordion-head span.active::after { display: none; }
 .show { display: block; }
