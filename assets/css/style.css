@@ -239,7 +239,10 @@ header {
   display: none;
 } */
 
-.image-content { display: none; }
+/* .image-content { display: none; } */
+
+.slider-images > li { display: none; }
+.slider-images > li.show { display: block; }
 /*banner section end*/
 
 
