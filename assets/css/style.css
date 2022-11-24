@@ -234,10 +234,12 @@ header {
 
 .banner-section .wrapper { position: relative; }
 
-.slider-images li:nth-of-type(2),
+/* .slider-images li:nth-of-type(2),
 .slider-images li:nth-of-type(3) { 
   display: none;
-}
+} */
+
+.image-content { display: none; }
 /*banner section end*/
 
 
