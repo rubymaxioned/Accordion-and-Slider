@@ -1,11 +1,8 @@
 var accordion = document.querySelectorAll('.accordion-head span')
 var para = document.querySelectorAll('.accordion li p')
 var images = document.querySelectorAll('.slider-images li');
-var arrow = document.querySelectorAll('.arrow li');
-
-var count = 0;
-
-// console.log(arrow);
+var prev = document.querySelector('.left-arrow');
+var next = document.querySelector('.right-arrow');
 
 accordion.forEach(function(list,index){
     list.addEventListener('click',function(){
@@ -15,13 +12,31 @@ accordion.forEach(function(list,index){
     })
 })
 
-arrow.forEach(function(btn,index){
-    btn.addEventListener('click',function(){
-        console.log(index);
-        if(index == 1){
-            console.log(count);
-            count += 1;
-            images[count].classList.add('show');
-        }
-    })
+var initial = 0;
+
+function sliderFunction(num) {
+    for(var i=0; i<images.length; i++){
+    images[i].classList.remove('show');
+    }
+
+    images[num].classList.add("show");
+}
+
+sliderFunction(initial);
+
+prev.addEventListener("click", function(){
+    initial -= 1;
+    if(initial < 0) {
+        initial = images.length - 1
+    }
+    sliderFunction(initial)
+})
+
+next.addEventListener("click", function(){
+    initial += 1;
+    if(initial > images.length - 1) {
+        initial = 0;
+    }
+    sliderFunction(initial)
+    // console.log(initial);
 })
