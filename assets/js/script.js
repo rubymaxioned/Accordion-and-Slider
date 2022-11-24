@@ -3,6 +3,8 @@ var para = document.querySelectorAll('.accordion li p')
 var images = document.querySelectorAll('.slider-images li');
 var arrow = document.querySelectorAll('.arrow li');
 
+var count = 0;
+
 // console.log(arrow);
 
 accordion.forEach(function(list,index){
@@ -13,8 +15,13 @@ accordion.forEach(function(list,index){
     })
 })
 
-arrow.forEach(function(btn){
+arrow.forEach(function(btn,index){
     btn.addEventListener('click',function(){
-        images[1].classList.add('show');
+        console.log(index);
+        if(index == 1){
+            console.log(count);
+            count += 1;
+            images[count].classList.add('show');
+        }
     })
 })
