@@ -32,7 +32,7 @@ sliderFunction(initial);
 prev.addEventListener("click", function(){
     initial -= 1;
     if(initial < 0) {
-        initial = images.length - 1
+        initial = images.length - 1;
     }
     sliderFunction(initial);
 })
