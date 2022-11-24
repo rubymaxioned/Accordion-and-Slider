@@ -1,7 +1,11 @@
 var accordion = document.querySelectorAll('.accordion-head span')
-var horizontalIcon = document.querySelectorAll('.accordion-head span::after');
-console.log(horizontalIcon);
+var para = document.querySelectorAll('.accordion li p')
+// console.log(para[2]);
 
-accordion.forEach(function(list){
-    console.log(list);
+accordion.forEach(function(list,index){
+    list.addEventListener('click',function(){
+        list.classList.toggle('active');
+        para[index].classList.toggle('show');
+        console.log(para[index]);
+    })
 })
