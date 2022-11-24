@@ -156,7 +156,9 @@ header {
 }
 
 .icon::before {
+  position: absolute;
   font-family: "FontAwesome";
+  left: 0;
   text-indent: 0;
 }
 
@@ -170,7 +172,6 @@ header {
 }
 
 .play::before, .see::before {
-  position: absolute;
   top: 50%;
   left: 50%;
   color: #fff;
@@ -189,6 +190,47 @@ header {
 }
 /*banner section end*/
 
+
+/*card section start*/
+.card-section { padding: 25px 0; }
+
+.icon1::before,
+.icon2::before,
+.icon3::before,
+.icon4::before { 
+  content: '\f04b';
+}
+
+.card-section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-section ul li { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  color: #3D3D3D;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.card-section p {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: justify;
+  color: #555;
+}
+/*card section end*/
 
 
 
