@@ -445,3 +445,23 @@ h3 { font-size: 18px; }
 .card-section .wrapper,
 .accordion-section .wrapper { width: 80%; }
 }  
+
+/*media query for 1366px starts here*/
+@media only screen and (min-width: 1366px) {
+  .play,
+  .see,
+  .lorem {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #fff;
+  }
+  
+  .play::before,
+  .see::before,
+  .lorem::before { font-size: 115px; }
+  
+  .left-arrow::before,
+  .right-arrow::before { font-size: 40px; }
+  
+  .slider-content span:nth-of-type(2) { font-size: 38px; }
+  }
